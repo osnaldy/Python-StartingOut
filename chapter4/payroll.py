@@ -19,5 +19,4 @@ def overtime(hours, pay):
 def regulartime(hours, pay):
     total = hours * pay
     print "Your total gross pay is", format(total, '.2f')
-    
 main()
