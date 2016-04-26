@@ -7,6 +7,6 @@ def main():
         print i, '\t   ', fall_distance(i)
 
 def fall_distance(time):
-    d = 1/5.0 * GRAVITY * time**2
+    d = 1/2.0 * GRAVITY * time**2
     return d
 main()
