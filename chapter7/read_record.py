@@ -16,10 +16,9 @@ def main():
 
         print "Name: ", name
         print 'ID: ', id
-        print 'Department: ', department
+        print 'Department:  ', department
         print
 
         name = rec.readline()
-
     rec.close()
 main()
