@@ -1,0 +1,12 @@
+When you hear the word dictionary.
+You probably think about a large book such as the Merriam-Webster dictionary.
+Containing words and their definitions.
+If you want to know the meaning of a particular word.
+You locate it in the dictionary to find its definition.
+In Python a dictionary is an object that stores a collection of data.
+Each element that is stored in a dictionary has two parts a key and a value.
+In fact dictionary elements are commonly referred to as key-value pairs.
+When you want to retrieve a specific value from a dictionary.
+You use the key that is associated with that value.
+This is similar to the process of looking up a word in the Merriam-Webster dictionary.
+Where the words are keys and the definitions are values.
