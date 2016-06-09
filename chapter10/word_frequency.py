@@ -1,7 +1,6 @@
 #This program reads through a paragraph and count the word's frequencies and
 #returns it as a dictionary. words represents the key, and the number it appears
 #represents the value
-rem = '.'
 f = open('unique.txt','r').read().split()
 dictionary = {}
 for i in f:
