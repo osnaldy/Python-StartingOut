@@ -2,7 +2,7 @@ class Cellphone:
     def __init__(self, manufact, model, price):
         self.__manufact = manufact
         self.__model = model
-        self.__price = price
+        self.__retail_price = price
 
     def set_manufact(self, manufact):
         self.__manufact = manufact
@@ -21,4 +21,3 @@ class Cellphone:
 
     def get_retail_price(self):
         return self.__retail_price
-    
