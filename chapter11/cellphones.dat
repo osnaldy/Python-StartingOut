@@ -1,0 +1,16 @@
+(icellphone
+Cellphone
+p0
+(dp1
+S'_Cellphone__manufact'
+p2
+S'Apple'
+p3
+sS'_Cellphone__retail_price'
+p4
+F899.99
+sS'_Cellphone__model'
+p5
+S'Iphone 6 Plus'
+p6
+sb.
