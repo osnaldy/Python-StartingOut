@@ -1,0 +1,33 @@
+(dp0
+S'Osnaldy Vasquez'
+p1
+(icontact
+Contact
+p2
+(dp3
+S'_Contact__name'
+p4
+g1
+sS'_Contact__email'
+p5
+S'tempo@blah.com'
+p6
+sS'_Contact__phone'
+p7
+S'123-456-7891'
+p8
+sbsS'Jorge Ruiz'
+p9
+(icontact
+Contact
+p10
+(dp11
+g4
+g9
+sg5
+S'jorge@blah.com'
+p12
+sg7
+S'919-555-1212'
+p13
+sbs.

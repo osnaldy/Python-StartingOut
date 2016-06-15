@@ -24,6 +24,6 @@ class Contact:
         return self.__email
 
     def __str__(self):
-        return 'Name: ' + self.__name + \
-               'Phone: ' + self.__phone + \
+        return 'Name: ' + self.__name + '\n'\
+               'Phone: ' + self.__phone + '\n'\
                'Email: ' + self.__email
