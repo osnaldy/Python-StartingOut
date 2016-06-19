@@ -7,8 +7,6 @@ class Car:
 
     def set_speed(self, speed):
         self.__speed = speed + 5
-        return self.__speed
 
     def set_break(self, speed):
         self.__speed = speed - 5
-        return self.__speed
