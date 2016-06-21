@@ -29,3 +29,9 @@ class Information:
 
     def get_phone_number(self):
         return self.__phone_number
+
+    def __str__(self):
+        return 'Name: ' + self.__name + '\n'\
+               'Address: ' + self.__address + '\n'\
+               'Age: ' + self.__age + '\n'\
+               'Phone Number: ' + self.__phone_number
