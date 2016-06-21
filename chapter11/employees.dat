@@ -1,0 +1,23 @@
+(dp0
+S'OV119900'
+p1
+(iemployee
+Employee
+p2
+(dp3
+S'_Employee__name'
+p4
+S'Ostempo'
+p5
+sS'_Employee__department'
+p6
+S'Computer Science'
+p7
+sS'_Employee__ID_number'
+p8
+g1
+sS'_Employee__job_title'
+p9
+S'Front End'
+p10
+sbs.
