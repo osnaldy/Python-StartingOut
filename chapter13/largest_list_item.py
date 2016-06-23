@@ -1,8 +1,8 @@
 def main():
 
     list = eval(raw_input("Enter a list of numbers: "))
-    print largest(list)
-    
+    print "The largest number is :", largest(list)
+
 def largest(list):
     if len(list) == 1:
         return list[0]
