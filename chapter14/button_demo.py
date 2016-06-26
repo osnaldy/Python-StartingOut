@@ -11,10 +11,13 @@ class GUI():
         self.my_button = Tkinter.Button(self.main_window,
                                         text = 'Click Me!!',
                                         command = self.do_something)
+
         self.my_button.pack()
 
         Tkinter.mainloop()
 
     def do_something(self):
-        tkMessageBox.showinfo('Response', 'FUCK YOU STONE')
-my_Gui = GUI()
+
+        tkMessageBox.showinfo('Response', 'Hello')
+
+my_gui = GUI()
