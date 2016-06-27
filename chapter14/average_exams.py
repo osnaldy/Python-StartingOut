@@ -15,7 +15,7 @@ class AverageExam():
         self.label_1 = Tkinter.Label(self.frame_1,
                                      text = 'Enter the score for test #1:')
         self.entry_1 = Tkinter.Entry(self.frame_1,
-                                     width = 10)
+                                     width = 10, fg = 'blue')
 
         self.label_1.pack(side = 'left')
         self.entry_1.pack(side = 'left')
@@ -23,7 +23,7 @@ class AverageExam():
         self.label_2 = Tkinter.Label(self.frame_2,
                                      text = 'Enter the score for test #2:')
         self.entry_2 = Tkinter.Entry(self.frame_2,
-                                     width = 10)
+                                     width = 10, fg = 'blue')
 
         self.label_2.pack(side = 'left')
         self.entry_2.pack(side = 'left')
@@ -31,7 +31,7 @@ class AverageExam():
         self.label_3 = Tkinter.Label(self.frame_3,
                                      text = 'Enter the score for test #3:')
         self.entry_3 = Tkinter.Entry(self.frame_3,
-                                     width = 10)
+                                     width = 10, fg = 'blue')
 
         self.label_3.pack(side = 'left')
         self.entry_3.pack(side = 'left')
@@ -46,8 +46,8 @@ class AverageExam():
 
         self.calc_button = Tkinter.Button(self.frame_5,
                                           text = 'Average',
-                                          command = self.calc_avg)
-        self.quit_button = Tkinter.Button(self.frame_5,
+                                          command = self.calc_avg, fg = 'blue')
+        self.quit_button = Tkinter.Button(self.frame_5, fg = 'red',
                                           text = 'Quit',
                                           command = self.main_window.destroy)
 
