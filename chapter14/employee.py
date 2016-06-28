@@ -19,7 +19,7 @@ class Employees():
         self.button_frame = Tkinter.Frame(self.main_window, pady = 20)
 
         self.employee_label = Tkinter.Label(self.employee_frame, text = "Employee's Name:")
-        self.employee_label.pack(side = 'left')
+        self.employee_label.pack(side = 'left', padx = 15)
 
         self.employee_entry = Tkinter.Entry(self.employee_frame, width = 20)
         self.employee_entry.pack(side = 'right')
@@ -34,13 +34,13 @@ class Employees():
         self.department_label.pack(side = 'left')
 
         self.department_entry = Tkinter.Entry(self.department_frame, width = 20)
-        self.department_entry.pack(side = 'left')
+        self.department_entry.pack(side = 'right')
 
         self.job_title_label = Tkinter.Label(self.job_title_frame, text = "Employee's Job Title:")
-        self.job_title_label.pack(side = 'left')
+        self.job_title_label.pack(side = 'left', padx = 11)
 
         self.job_title_entry = Tkinter.Entry(self.job_title_frame, width = 20)
-        self.job_title_entry.pack(side = 'left')
+        self.job_title_entry.pack(side = 'right')
 
         self.enter_button = Tkinter.Button(self.button_frame, text = 'Enter Information')
         self.enter_button.pack(side = 'left', padx = 20)
