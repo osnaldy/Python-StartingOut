@@ -3,57 +3,61 @@ import pickle
 
 class Employees():
 
+    FILE = open('Employee.dat', 'a')
+
     def __init__(self):
+
         self.main_window = Tkinter.Tk()
 
-        self.main_window.title('Employees')
-        #Employee Frame
-        self.employee_frame = Tkinter.Frame(self.main_window, pady = 20)
-        #Id_Number Frame
-        self.id_number_frame = Tkinter.Frame(self.main_window, pady = 20)
-        #Employee's Department Frame
-        self.department_frame = Tkinter.Frame(self.main_window, pady = 20)
-        #Employee's Job title Frame
-        self.job_title_frame = Tkinter.Frame(self.main_window, pady = 20)
-        #Buttons Frame
-        self.button_frame = Tkinter.Frame(self.main_window, pady = 20)
+        self.employee_label = Tkinter.Label(self.main_window, text = "Employee's Name:")
+        self.employee_label.grid(row = 0)
 
-        self.employee_label = Tkinter.Label(self.employee_frame, text = "Employee's Name:")
-        self.employee_label.pack(side = 'left', padx = 15)
+        self.employee_entry = Tkinter.Entry(self.main_window)
+        self.employee_entry.grid(row = 0, column = 1)
 
-        self.employee_entry = Tkinter.Entry(self.employee_frame, width = 20)
-        self.employee_entry.pack(side = 'right')
+        self.id_number_label = Tkinter.Label(self.main_window, text = "Employee's ID_Number:")
+        self.id_number_label.grid(row = 1)
 
-        self.id_number_label = Tkinter.Label(self.id_number_frame, text = "Employee's ID_Number:")
-        self.id_number_label.pack(side = 'left')
+        self.id_number_entry = Tkinter.Entry(self.main_window)
+        self.id_number_entry.grid(row =1 , column = 1)
 
-        self.id_number_entry = Tkinter.Entry(self.id_number_frame, width = 20)
-        self.id_number_entry.pack(side = 'right')
+        self.department_label = Tkinter.Label(self.main_window, text = "Employee's Department:")
+        self.department_label.grid(row =2)
 
-        self.department_label = Tkinter.Label(self.department_frame, text = "Employee's Department:")
-        self.department_label.pack(side = 'left')
+        self.department_entry = Tkinter.Entry(self.main_window)
+        self.department_entry.grid(row =2 , column = 1)
 
-        self.department_entry = Tkinter.Entry(self.department_frame, width = 20)
-        self.department_entry.pack(side = 'right')
+        self.job_title_label = Tkinter.Label(self.main_window, text = "Employee's Job Title:")
+        self.job_title_label.grid(row =3)
 
-        self.job_title_label = Tkinter.Label(self.job_title_frame, text = "Employee's Job Title:")
-        self.job_title_label.pack(side = 'left', padx = 11)
+        self.job_title_entry = Tkinter.Entry(self.main_window)
+        self.job_title_entry.grid(row =3 , column = 1)
 
-        self.job_title_entry = Tkinter.Entry(self.job_title_frame, width = 20)
-        self.job_title_entry.pack(side = 'right')
+        self.enter_button = Tkinter.Button(self.main_window, text = 'Enter Information',
+                                           command = self.add_employee)
+        self.enter_button.grid(row = 5)
 
-        self.enter_button = Tkinter.Button(self.button_frame, text = 'Enter Information')
-        self.enter_button.pack(side = 'left', padx = 20)
-
-        self.exit_button = Tkinter.Button(self.button_frame, text = 'Exit Program',
+        self.exit_button = Tkinter.Button(self.main_window, text = 'Exit Program',
                                           command = self.main_window.destroy)
-        self.exit_button.pack(side = 'left')
+        self.exit_button.grid(row = 5, column = 1)
 
-        self.employee_frame.pack()
-        self.id_number_frame.pack()
-        self.department_frame.pack()
-        self.job_title_frame.pack()
-        self.button_frame.pack()
+        self.employee = {}
+
         Tkinter.mainloop()
+
+    def add_employee(self):
+
+        self.employee["Name"] = self.employee_entry.get()
+        self.employee["ID_Number"] = self.id_number_entry.get()
+        self.employee["Department"] = self.department_entry.get()
+        self.employee["Job_Title"] = self.job_title_entry.get()
+
+        pickle.dump(self.employee, self.FILE)
+
+        self.employee_entry.delete(0, "end")
+        self.id_number_entry.delete(0, "end")
+        self.department_entry.delete(0, "end")
+        self.job_title_entry.delete(0, "end")
+
 
 gui = Employees()
